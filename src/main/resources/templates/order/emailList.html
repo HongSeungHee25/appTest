@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>orderList</title>
+</head>
+<body>
+<h3>주문목록</h3>
+<hr>
+<ul>
+    <th:block th:each="vo:${list}">
+        <li><a th:href="|@{detail(email=${vo})}|">[[${vo}]]</a></li>
+    </th:block>
+</ul>
+<hr>
+<a href="/">HOME</a>
+</body>
+</html>
+<!-- 잘못된 model 변수명은 감점.-->

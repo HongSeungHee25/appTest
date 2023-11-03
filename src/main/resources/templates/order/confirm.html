@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>orderConfirm</title>
+</head>
+<body>
+<h3>주문확인</h3>
+<hr>
+<ul>
+  <li>고객 이메일 : [[${vo.email}]]</li>
+  <li>상품코드 : [[${vo.pcode}]]</li>
+  <li>주문수량 : [[${vo.quantity}]]</li>
+  <li>주문날짜 : [[${vo.orderdate}]]</li>
+</ul>
+<hr>
+<button type="button" onclick="location.href='/order/new'">추가주문</button>
+</body>
+</html>
+<!-- 잘못된 model 변수명은 감점.-->
